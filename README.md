@@ -8,16 +8,21 @@ OpenROAD is an open-source, fully automated RTL-to-GDSII flow for digital integr
      * Clone the OpenROAD repository
 
            git clone --recursive https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts
-       
+
+<img width="1212" height="780" alt="Screenshot 2025-10-24 133913" src="https://github.com/user-attachments/assets/c0a91d80-79c1-4681-93ae-54fb6f841257" />
+
            cd OpenROAD-flow-scripts
 
     *  Run the setup script
 
            sudo ./setup.sh
 
+<img width="1020" height="921" alt="Screenshot 2025-10-24 161443" src="https://github.com/user-attachments/assets/82ef8229-8902-4475-a795-b7f7ebffadcd" />
+
     * Build OpenROAD
 
            ./build_openroad.sh --local
+
 
     * Verify Installation
 
@@ -26,7 +31,9 @@ OpenROAD is an open-source, fully automated RTL-to-GDSII flow for digital integr
            yosys -help  
 
            openroad -help
-   
+
+<img width="1855" height="960" alt="Screenshot 2025-10-24 161937" src="https://github.com/user-attachments/assets/1370f205-e381-4b75-a5b7-d9ab658e350e" />
+
     *  Run the OpenROAD flow
  
           cd flow
