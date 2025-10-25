@@ -75,6 +75,10 @@ In floorplanning the macros and the IO and power planning takes place.
   
 - To view the Floorplan result
  make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk gui_floorplan
+<img width="648" height="466" alt="Screenshot 2025-10-25 202710" src="https://github.com/user-attachments/assets/be79fe1b-5128-428f-a357-0ca047040fd8" />
+<img width="1017" height="996" alt="Screenshot 2025-10-25 202847" src="https://github.com/user-attachments/assets/45841a18-7a3b-4cde-8ddd-45a39592f707" />
+<img width="461" height="357" alt="Screenshot 2025-10-25 203740" src="https://github.com/user-attachments/assets/bc2126dd-99b6-4955-9ef7-8bbe8fffddae" />
+<img width="1488" height="920" alt="Screenshot 2025-10-25 213429" src="https://github.com/user-attachments/assets/9d80948d-aa3c-4445-b655-50a4d5e97ca8" />
 
 ### Placement
 Placement is the process of assigning exact physical locations to standard cells (logic gates, flip-flops, etc.) within the floorplanned blocks.
@@ -91,5 +95,9 @@ Placement is the process of assigning exact physical locations to standard cells
 
 - To view the Placement result
      make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk gui_place
+<img width="1286" height="944" alt="Screenshot 2025-10-25 214134" src="https://github.com/user-attachments/assets/c270488b-d30a-4f37-bfff-2379d5c1a1e3" />
+
+![7dcbb0eb-3666-48e9-a8e6-0c5e7f77b90c](https://github.com/user-attachments/assets/0b847692-7c5a-4728-ae8d-364b3fcaea9c)
+
 ### Acknowledgement
 I'm veryy grateful to VSD teamm for this RISC-V tapeout chip program.
