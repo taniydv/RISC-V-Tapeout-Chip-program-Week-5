@@ -58,7 +58,9 @@ OpenROAD is an open-source, fully automated RTL-to-GDSII flow for digital integr
 │   ├── platform         -> It has different technology note libraries, lef files, GDS etc 
 |   ├── tutorials        
 │   ├── util            
-│   ├── scripts                 
+│   ├── scripts       
+
+
 ### Floorplanning
 Floorplanning is the process of dividing the chip area and deciding the relative locations of major functional blocks (like ALU, memory, I/O, etc.) on the chip.
 It involves the chip planning where the die size, macros and standard cells rows are consider without actually allocating the area. Its objective is to minimize the interconnect length and to avoid congestion.
@@ -71,8 +73,8 @@ In floorplanning the macros and the IO and power planning takes place.
      make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk floorplan
   
 - To view the Floorplan result
-     make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk gui_floorplan
-  
+ make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk gui_floorplan
+
 ### Placement
 Placement is the process of assigning exact physical locations to standard cells (logic gates, flip-flops, etc.) within the floorplanned blocks.
 
