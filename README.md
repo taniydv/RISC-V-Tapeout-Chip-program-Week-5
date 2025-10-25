@@ -43,15 +43,50 @@ OpenROAD is an open-source, fully automated RTL-to-GDSII flow for digital integr
     *  Launch the graphical user interface (GUI) to visualize the final layout
  
           make gui_final
+├── OpenROAD-flow-scripts             
+│   ├── docker           -> It has Docker based installation, run scripts and all saved here
+│   ├── docs             -> Documentation for OpenROAD or its flow scripts.  
+│   ├── flow             -> Files related to run RTL to GDS flow  
+|   ├── jenkins          -> It contains the regression test designed for each build update
+│   ├── tools            -> It contains all the required tools to run RTL to GDS flow
+│   ├── etc              -> Has the dependency installer script and other things
+│   ├── setup_env.sh     -> Its the source file to source all our OpenROAD rules to run the RTL to GDS flow
 
+├── flow           
+│   ├── design           -> It has built-in examples from RTL to GDS flow across different                                       technology nodes
+│   ├── makefile         -> The automated flow runs through makefile setup
+│   ├── platform         -> It has different technology note libraries, lef files, GDS etc 
+|   ├── tutorials        
+│   ├── util            
+│   ├── scripts                 
 ### Floorplanning
 Floorplanning is the process of dividing the chip area and deciding the relative locations of major functional blocks (like ALU, memory, I/O, etc.) on the chip.
 It involves the chip planning where the die size, macros and standard cells rows are consider without actually allocating the area. Its objective is to minimize the interconnect length and to avoid congestion.
 
 In floorplanning the macros and the IO and power planning takes place.
-
+- Specifies the die area and core area
+     *  DIE_AREA: Specifies the die area dimensions as 0 0 1600 1600.
+     *  CORE_AREA: Specifies the core area dimensions as 20 20 1590 1590.
+- Run Floorplan
+     make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk floorplan
+  
+- To view the Floorplan result
+     make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk gui_floorplan
+  
 ### Placement
 Placement is the process of assigning exact physical locations to standard cells (logic gates, flip-flops, etc.) within the floorplanned blocks.
 
+ PLACE_PINS_ARGS: Arguments for pin placement, excluding certain areas on the die:
+        -exclude left:0-600
+        -exclude left:1000-1600
+        -exclude right:*
+        -exclude top:*
+        -exclude bottom:*
+
+- Run Placement
+     make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk place
+
+- To view the Placement result
+     make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk gui_place
 ### Acknowledgement
 I'm veryy grateful to VSD teamm for this RISC-V tapeout chip program.
