@@ -82,6 +82,7 @@ In floorplanning the macros and the IO and power planning takes place.
 <img width="1017" height="996" alt="Screenshot 2025-10-25 202847" src="https://github.com/user-attachments/assets/45841a18-7a3b-4cde-8ddd-45a39592f707" />
 <img width="461" height="357" alt="Screenshot 2025-10-25 203740" src="https://github.com/user-attachments/assets/bc2126dd-99b6-4955-9ef7-8bbe8fffddae" />
 <img width="1488" height="920" alt="Screenshot 2025-10-25 213429" src="https://github.com/user-attachments/assets/9d80948d-aa3c-4445-b655-50a4d5e97ca8" />
+<img width="1513" height="922" alt="Screenshot 2025-10-25 213451" src="https://github.com/user-attachments/assets/7afb3bf6-7071-4acf-94b2-dce236c69aba" />
 
 ### Placement
 Placement is the process of assigning exact physical locations to standard cells (logic gates, flip-flops, etc.) within the floorplanned blocks.
