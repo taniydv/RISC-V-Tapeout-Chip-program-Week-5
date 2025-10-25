@@ -60,6 +60,7 @@ OpenROAD is an open-source, fully automated RTL-to-GDSII flow for digital integr
 │   ├── util            
 │   ├── scripts       
 
+<img width="775" height="224" alt="Screenshot 2025-10-25 100338" src="https://github.com/user-attachments/assets/bad2d47b-11db-4313-ac34-768d0de4159a" />
 
 ### Floorplanning
 Floorplanning is the process of dividing the chip area and deciding the relative locations of major functional blocks (like ALU, memory, I/O, etc.) on the chip.
