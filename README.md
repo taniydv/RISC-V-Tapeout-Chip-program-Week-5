@@ -43,22 +43,22 @@ OpenROAD is an open-source, fully automated RTL-to-GDSII flow for digital integr
     *  Launch the graphical user interface (GUI) to visualize the final layout
  
           make gui_final
-├── OpenROAD-flow-scripts             
-│   ├── docker           -> It has Docker based installation, run scripts and all saved here
-│   ├── docs             -> Documentation for OpenROAD or its flow scripts.  
-│   ├── flow             -> Files related to run RTL to GDS flow  
-|   ├── jenkins          -> It contains the regression test designed for each build update
-│   ├── tools            -> It contains all the required tools to run RTL to GDS flow
-│   ├── etc              -> Has the dependency installer script and other things
-│   ├── setup_env.sh     -> Its the source file to source all our OpenROAD rules to run the RTL to GDS flow
+- OpenROAD-flow-scripts             
+  * docker           -> It has Docker based installation, run scripts and all saved here
+  * docs             -> Documentation for OpenROAD or its flow scripts.  
+  * flow             -> Files related to run RTL to GDS flow  
+  * jenkins          -> It contains the regression test designed for each build update
+  * tools            -> It contains all the required tools to run RTL to GDS flow
+  * etc              -> Has the dependency installer script and other things
+  * setup_env.sh     -> Its the source file to source all our OpenROAD rules to run the RTL to GDS flow
 
-├── flow           
-│   ├── design           -> It has built-in examples from RTL to GDS flow across different                                       technology nodes
-│   ├── makefile         -> The automated flow runs through makefile setup
-│   ├── platform         -> It has different technology note libraries, lef files, GDS etc 
-|   ├── tutorials        
-│   ├── util            
-│   ├── scripts       
+- flow           
+   * design           -> It has built-in examples from RTL to GDS flow across different                                       technology nodes
+   * makefile         -> The automated flow runs through makefile setup
+   * platform         -> It has different technology note libraries, lef files, GDS etc 
+   * tutorials        
+   * util            
+   * scripts       
 
 <img width="775" height="224" alt="Screenshot 2025-10-25 100338" src="https://github.com/user-attachments/assets/bad2d47b-11db-4313-ac34-768d0de4159a" />
 
