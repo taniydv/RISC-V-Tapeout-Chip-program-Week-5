@@ -43,6 +43,9 @@ OpenROAD is an open-source, fully automated RTL-to-GDSII flow for digital integr
     *  Launch the graphical user interface (GUI) to visualize the final layout
  
           make gui_final
+
+<img width="1849" height="901" alt="Screenshot 2025-10-25 220543" src="https://github.com/user-attachments/assets/1f277971-7cc1-48cd-9052-f03bd45baf4a" />
+
 - OpenROAD-flow-scripts             
   * docker           -> It has Docker based installation, run scripts and all saved here
   * docs             -> Documentation for OpenROAD or its flow scripts.  
